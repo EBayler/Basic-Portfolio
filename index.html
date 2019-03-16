@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet"
+          href="assets/css/reset.css">
+    <link rel="stylesheet"
+          href="assets/css/style.css">
+   
 
     <title>Student Bio</title>
 
@@ -12,52 +15,71 @@
 
 <body>
 
-    <!-- Headline -->
-    <header>
-        <h1>Erika Bayler</h1>
+    <!-- Headline / Navigation -->
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html"
+               id="logo">Erika Bayler</a>
+
+            <nav>
+                  <a href="index.html">About</a>
+                  <a href="portfolio.html">Portfolio</a>
+                  <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <nav class="primary nav">
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!--Main Container-->
 
+    <div id="main-container" class="container">
+            <section class="main-section">
+                <h1>About Me</h1>
+                <div><img class="profile_image"
+                        src="assets/images/me.jpg"
+                        alt="Erika Bayler">
+                </div>
+                <p> I am a super random nerd that loves to try to find the best way to do every thing. I'm
+                    always good for a laugh but know when it's time to get down to business. While I am new to coding I have
+                    worked in tech for most of my life and have found the fastest way to learn how to fix something is be
+                    willing to break it.</p> <br>
+                <p>I currently work at Arapahoe Libraries at their Southglenn Library branch. I am a Library Specialist Lead
+                    / Branch Volunteer Coordinator. My whole job is making sure that everything inside of the library runs
+                    smooth and all of the staff are well trained and have complete backup from me and each other.</p>
+            </section>
+
+     <!--Side Bar -->
+
+            <section class="sidebar">
+                <div id="connect">
+                    <h2> Connect With Me</h2>
+                    <a href="https://github.com/EBayler"
+                    target="_blank">
+                        <img src="assets/images/GitHub-Mark.png"
+                            class="social"
+                            alt="Github">
+                    </a>
+                    <a href="https://stackoverflow.com/cv/ebayler"
+                    target="_blank">
+                        <img src="assets/images/stackoverflow.png"
+                            class="social"
+                            alt="Stack Overflow">
+                    </a>
+                    <a href="https://www.linkedin.com/in/erikabayler/"
+                    target="_blank">
+                        <img src="assets/images/linkedIn_PNG38.png"
+                            class="social"
+                            alt="LinkedIn">
+                    </a>
+        </section>
+    </div>
+    
+    <!--Footer-->
     <div>
-        <section class="about">
-            <h2>About Me</h2>
-            <div class="profile_image"><img
-                     src="https://pbs.twimg.com/profile_images/998356260587094018/x61RAbvL_400x400.jpg"
-                     alt="Erika Bayler">
-            </div>
-            <p class="p"> I am a super random nerd that loves to try to find the best way to do every thing. I'm
-                always good for a laugh but know when it's time to get down to business. While I am new to coding I have
-                worked in tech for most of my life and have found the fastest way to learn how to fix something is be
-                willing to break it.</p>
-        </section>
-
-        <section class="contact">
-            <h2>Contact Info</h2>
-            <ul>
-                <li><strong>Email:</strong> <a href="erika.bayler@gmail.com"
-                       target="_blank">erika.bayler@gmail.com</a></li>
-                <li><strong>Github:</strong> <a href="https://github.com/EBayler"
-                       target="_blank">EBayler</a></li>
-                <li><strong>Portfolio:</strong> <a href="#">Coming Soon</a></li>
-            </ul>
-        </section>
-
-        <section class="portfolio">
-            <ul>
-                <li><img src="assets/images/me.jpg">I Voted!</li>
-                <li><img src="assets/images/dino.jpg">Triceratops & DNSM For Life!</li>
-                <li><img src="assets/images/DIA.jpg">DIA Shenanigans</li>
-                <li><img src="assets/images/Hike.jpg">Get A Life! Go Outside!</li>
-            </ul>
-
-        </section>
+            <footer>
+                <div class="container">
+                    <h4>Copyright &copy;</h4>
+                </div>
+            </footer>
     </div>
 
 </body>
